@@ -7,7 +7,7 @@ public class Exercise {
 
     int randnum;
 
-    randnum = (int)(Math.random() * 25);
+    randnum = (int)(Math.random() * 27);
 
     switch (randnum) {
       case 0 :
@@ -50,12 +50,12 @@ public class Exercise {
         break;
       case 9 :
         System.out.println(" 9번 \n 배열에서 이웃 값과의 차이(절대값)를 모두 더하여 출력하라!");
-        System.out.println(" {1, 2, 4, 7, 11, 9} \n 합계: 15 \n ");
+        System.out.println(" {1, 2, 4, 7, 11, 9} \n 합계: 12 \n ");
         break;
 
       case 10 :
         System.out.println(" 10번 \n 배열에서 이웃 값과의 차이(절대값)를 모두 더하여 출력하라!");
-        System.out.println(" {1, 2, 4, 7, 11, 9}\n 합계: 15");
+        System.out.println(" {1, 2, 4, 7, 11, 9}\n 합계: 12");
         break;
 
 
@@ -125,6 +125,12 @@ public class Exercise {
         System.out.println(" 홍길동: *********\n 임꺽정: ********\n 유관순: *********\n 이순신: **********");
         break;
 
+      case 25 :
+        System.out.println(" 25번 \n 길이를 입력 받아 역삼각형을 출력하라.\n 단, 입력받은 값이 짝수면 홀수로 바꾼다.");
+
+      case 26 :
+        System.out.println(" 26번 \n 길이를 입력 받아 삼각형을 출력하라\n >java Exercise 8");
+        System.out.println(" *\n **\n ***\n ****\n *****\n ****\n ***\n **\n *\n");
 
     }
   }

@@ -1,2 +1,4 @@
 
-#Exercise
+# Exercise
+
+# Exercise.exam()

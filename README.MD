@@ -1,4 +1,2 @@
 
 # Exercise
-
-# Exercise.exam()

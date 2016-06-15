@@ -7,7 +7,7 @@ public class Exercise {
 
     int randnum;
 
-    randnum = (int)(Math.random() * 27);
+    randnum = (int)(Math.random() * 28);
 
     switch (randnum) {
       case 0 :
@@ -131,6 +131,10 @@ public class Exercise {
       case 26 :
         System.out.println(" 26번 \n 길이를 입력 받아 삼각형을 출력하라\n >java Exercise 8");
         System.out.println(" *\n **\n ***\n ****\n *****\n ****\n ***\n **\n *\n");
+
+      case 27 :
+        System.out.println(" 27번 \n 구구단을 출력하는데 2단,4단,6단,8단만 출력하라.");
+        System.out.println(" 단, 2단은 2까지 4단은 4까지 6단은 6까지 8단은 8까지만 출력하라");
 
     }
   }

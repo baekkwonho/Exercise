@@ -7,7 +7,7 @@ public class Exercise {
 
     int randnum;
 
-    randnum = (int)(Math.random() * 28);
+    randnum = (int)(Math.random() * 29);
 
     switch (randnum) {
       case 0 :
@@ -85,8 +85,8 @@ public class Exercise {
         break;
 
       case 16 :
-        System.out.println(" 16번 \n 주어진 문자열의 알파벳의 개수를 센다.");
-        System.out.println(" >java Exercise circleofnumbers \n b:1 c:2 e:2 ...");
+        System.out.println(" 16번 \n 주어진 문자열의 알파벳의 개수를 센다.\n 알파벳은 무조건 소문자로 변경한다.");
+        System.out.println(" >java Exercise circleofnumbers \n b:1\n c:2\n e:2\n ...");
         break;
 
       case 17 :
@@ -135,6 +135,10 @@ public class Exercise {
       case 27 :
         System.out.println(" 27번 \n 구구단을 출력하는데 2단,4단,6단,8단만 출력하라.");
         System.out.println(" 단, 2단은 2까지 4단은 4까지 6단은 6까지 8단은 8까지만 출력하라");
+
+      case 28 :
+        System.out.println(" 28번 \n 숫자를 입력받아서 그 수 들의 합을 구하라");
+        System.out.println(" > java exercise 11125\n 합계 : 10");
 
     }
   }

@@ -7,7 +7,7 @@ public class Exercise {
 
     int randnum;
 
-    randnum = (int)(Math.random() * 29);
+    randnum = (int)(Math.random() * 31);
 
     switch (randnum) {
       case 0 :
@@ -127,18 +127,32 @@ public class Exercise {
 
       case 25 :
         System.out.println(" 25번 \n 길이를 입력 받아 역삼각형을 출력하라.\n 단, 입력받은 값이 짝수면 홀수로 바꾼다.");
+        break;
 
       case 26 :
         System.out.println(" 26번 \n 길이를 입력 받아 삼각형을 출력하라\n >java Exercise 8");
         System.out.println(" *\n **\n ***\n ****\n *****\n ****\n ***\n **\n *\n");
+        break;
 
       case 27 :
         System.out.println(" 27번 \n 구구단을 출력하는데 2단,4단,6단,8단만 출력하라.");
         System.out.println(" 단, 2단은 2까지 4단은 4까지 6단은 6까지 8단은 8까지만 출력하라");
+        break;
 
       case 28 :
         System.out.println(" 28번 \n 숫자를 입력받아서 그 수 들의 합을 구하라");
         System.out.println(" > java exercise 11125\n 합계 : 10");
+        break;
+
+      case 29 :
+        System.out.println(" 29번 \n 0~ 20까지 다음과 같이 출력 하라\n 0 1 3 4 6 7 9 10 12");
+        break;
+
+      case 30 :
+        System.out.println(" 30번 \n 2단부터 8단까지 짝수 구구단을 출력하며 1~9까지 홀수를 곱한다");
+        System.out.println(" 단 6단은 1~9까지 곱한다");
+        break;
+
 
     }
   }

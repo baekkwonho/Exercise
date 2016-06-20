@@ -1,6 +1,6 @@
 
 
-public class Answer30 {
+public class Answer030 {
 
   public static void main(String[] args) {
 

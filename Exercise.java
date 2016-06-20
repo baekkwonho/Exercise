@@ -7,7 +7,7 @@ public class Exercise {
 
     int randnum;
 
-    randnum = (int)(Math.random() * 31);
+    randnum = (int)(Math.random() * 34);
 
     switch (randnum) {
       case 0 :
@@ -152,6 +152,17 @@ public class Exercise {
         System.out.println(" 30번 \n 2단부터 8단까지 짝수 구구단을 출력하며 1~9까지 홀수를 곱한다");
         System.out.println(" 단 6단은 1~9까지 곱한다");
         break;
+
+      case 31 :
+        System.out.println(" 31번 \n 0~20까지 1,2,3,4씩 증가하여 출력한다.");
+        System.out.println(" 출력: 0 1 3 6 10 15");
+
+      case 32 :
+        System.out.println(" 32번 \n 2단~9단 구구단 출력 한다.");
+        System.out.println(" 짝수 단은 홀수를 곱하고, 홀수 단은 짝수를 곱한다");
+
+      case 33 :
+        System.out.println(" 33번 \n While문을 사용하여 구구단을 출력 한다");
 
 
     }

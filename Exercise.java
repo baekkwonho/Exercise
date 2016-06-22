@@ -49,8 +49,8 @@ public class Exercise {
         System.out.println(" 8번 \n 다섯 명의 국영수 점수를 계산하여 총점과 평균을 구하라\n 각 학생의 총점과 평균은 배열에 저장하라.\n{60.5, 78.9, 95, 0, 0},\n{90, 85, 99, 0, 0},\n{80, 74, 98, 0, 0},\n{70, 82, 97, 0, 0},\n{60, 88, 96, 0, 0}\n");
         break;
       case 9 :
-        System.out.println(" 9번 \n 배열에서 이웃 값과의 차이(절대값)를 모두 더하여 출력하라!");
-        System.out.println(" {1, 2, 4, 7, 11, 9} \n 합계: 12 \n ");
+        System.out.println(" 9번 \n 문제 작성중------");
+        System.out.println(" ");
         break;
 
       case 10 :
@@ -90,7 +90,7 @@ public class Exercise {
         break;
 
       case 17 :
-        System.out.println(" 17번 \n 반복문을 사용하여 4에서 30까지 1씩 증가한 값을 출력한다.\n 단 10~20 사이는 출력하지 말아라.");
+        System.out.println(" 17번 \n 문제 작성중-");
         break;
 
       case 18 :
@@ -189,7 +189,10 @@ public class Exercise {
         System.out.println(" 38번 \n 사용자로부터 구구단의 특정 단을 입력받아 구구단을 출력하라");
         break;
 
-
+      case 39 :
+        System.out.println(" 39번\n 사용자로부터 구구단을 특정 단을 입력 받아 출력하라");
+        System.out.println(" 단, 2~9 사이의 단만 출력하고, 0단이면 종료하라.");
+        break;
 
 
     }

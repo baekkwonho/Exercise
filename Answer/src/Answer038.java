@@ -7,11 +7,11 @@ public class Answer038 {
     java.util.Scanner keyScanner = new java.util.Scanner(System.in);
 
     System.out.print("출력할 구구단은? ");
-    String number = keyScanner.nextLine();
+    int number = Integer.parseInt(keyScanner.nextLine());
 
 
     for (int j = 1; j <= 9; j++) {
-      System.out.printf("%d * %d = %d\n", Integer.parseInt(number), j, Integer.parseInt(number) * j);
+      System.out.printf("%d * %d = %d\n", number, j, number * j);
     }
     System.out.println();
 

@@ -49,8 +49,10 @@ public class Exercise {
         System.out.println(" 8번 \n 다섯 명의 국영수 점수를 계산하여 총점과 평균을 구하라\n 각 학생의 총점과 평균은 배열에 저장하라.\n{60.5, 78.9, 95, 0, 0},\n{90, 85, 99, 0, 0},\n{80, 74, 98, 0, 0},\n{70, 82, 97, 0, 0},\n{60, 88, 96, 0, 0}\n");
         break;
       case 9 :
-        System.out.println(" 9번 \n 문제 작성중------");
-        System.out.println(" ");
+        System.out.println(" 9번 \n 행,열 을 사용자로부터 입력 받고 그 크기만큼 값을 넣고 전체를 출력한다.");
+        System.out.println(" row? : 3 \n col? : 3");
+        System.out.println(" [0][0] input number : 1 \n [0][1] input number : 10 ....")
+        System.out.println(" 1 10 4 \n 2 4 8 \n 4 2 1 ");
         break;
 
       case 10 :

@@ -12,7 +12,7 @@ public class Exercise {
     switch (randnum) {
       case 0 :
         System.out.println(" 0번\n 0~9까지 숫자를 출력\n 각 숫자가 홀수인지 짝수인지 출력한다.");
-        System.out.println("0(짝수) 1(홀수) 2(짝수) ....");
+        System.out.println(" 0(짝수) 1(홀수) 2(짝수) ....");
         break;
       case 1 :
         System.out.println(" 1번\n 숫자를 입력받아서 홀수 개수와 짝수 개수를 센다.");

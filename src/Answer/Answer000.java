@@ -10,7 +10,7 @@ public class Answer000 {
         System.out.print("(짝수)\n");
       } else {
         System.out.print("(홀수)\n");
-      }
+      } //
     }
   }
 }

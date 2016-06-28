@@ -1,6 +1,7 @@
 package Answer;
-
-
+/*
+{1, 4, 16, 64, 254} : 등비수열이다.
+*/
 public class Answer014 {
 
   public static void main(String[] args) {

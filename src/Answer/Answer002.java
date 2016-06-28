@@ -1,4 +1,10 @@
 package Answer;
+/*
+숫자를 입력 하세요. 1566874
+짝수 : 4
+홀수 : 3
+*/
+
 
 import java.util.Scanner;
 
@@ -23,6 +29,9 @@ public class Answer002 {
 
     System.out.printf("짝수 : %d\n", evenCount);
     System.out.printf("홀수 : %d\n", oddCount);
+    
+    
+    keyScanner.close();
 
   }
 }

@@ -1,5 +1,8 @@
 package Answer;
-
+/*
+{1, 2, 4, 7, 11, 9}
+합계 : 12 
+*/
 
 public class Answer010 {
 

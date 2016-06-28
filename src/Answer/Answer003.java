@@ -1,4 +1,14 @@
 package Answer;
+/*
+숫자를 5개 입력 하세요. 
+[0]번째 숫자 278
+[1]번째 숫자 34
+[2]번째 숫자 12
+[3]번째 숫자 1980
+[4]번째 숫자 524
+가장 큰 수 : 1980
+가장 작은 수 : 12
+*/
 
 import java.util.Scanner;
 
@@ -31,7 +41,8 @@ public class Answer003 {
 
     System.out.printf("가장 큰 수 : %d\n", max);
     System.out.printf("가장 작은 수 : %d\n", min);
-
+    
+    keyScanner.close();
 
   }
 }

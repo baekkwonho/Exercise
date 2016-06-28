@@ -20,11 +20,11 @@ public class Exercise {
         break;
       case 2 :
         System.out.println(" 2번 \n 숫자를 입력받아서 그 숫자에 포함된 홀수와 짝수를 센다.");
-        System.out.println(" >java Exercise 1566874 \n 짝수:4 \n 홀수: 3 ");
+        System.out.println(" > 숫자를 입력 하세요. 1566874 \n 짝수:4 \n 홀수: 3 ");
         break;
       case 3 :
-        System.out.println(" 3번 \n 숫자를 입력 받아서 그 중 가장 큰 수와 가장 작은 수를 찾아라!");
-        System.out.println(" > java Exercise 278 34 12 1980 22 6 \n 가장 큰 수: 1980 \n 가장 작은 수: 6");
+        System.out.println(" 3번 \n 숫자를 5개 입력 받아서 그 중 가장 큰 수와 가장 작은 수를 찾아라!");
+        System.out.println(" > 숫자를 5개 입력 하세요 \n 278 34 12 1980 22 6 \n 가장 큰 수: 1980 \n 가장 작은 수: 6");
 
         break;
       case 4 :

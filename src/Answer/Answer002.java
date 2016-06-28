@@ -1,10 +1,15 @@
 package Answer;
 
+import java.util.Scanner;
+
 public class Answer002 {
 
   public static void main(String[] args) {
+    
+    System.out.print("숫자를 입력 하세요. ");
+    Scanner keyScanner = new Scanner(System.in);
 
-    int number = Integer.parseInt(args[0]);
+    int number = keyScanner.nextInt();
     int evenCount = 0, oddCount = 0;
 
     while (number > 0) {

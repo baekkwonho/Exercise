@@ -1,13 +1,21 @@
 package Answer;
 
+import java.util.Scanner;
+
 public class Answer003 {
 
   public static void main(String[] args) {
+    
+    Scanner keyScanner = new Scanner(System.in);
+    int[] numbers = new int[5];
+    System.out.println("숫자를 5개 입력 하세요. ");
+   for (int i = 0; i < 5; i++ ) {
+     System.out.printf("[%d]번째 숫자 ", i);
+     numbers[i] = keyScanner.nextInt();
+   }
 
-    int[] numbers  = new int[args.length];
-
-    int max = Integer.parseInt(args[0]);
-    int min = Integer.parseInt(args[0]);
+    int max = numbers[0];
+    int min = numbers[0];
 
     for (int i = 0; i < args.length; i++) {
       numbers[i] = Integer.parseInt(args[i]);

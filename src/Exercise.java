@@ -8,8 +8,8 @@ public class Exercise {
     int randnum;
 
     randnum = (int)(Math.random() * 42);
-    
-    
+
+
     switch (randnum) {
       case 0 :
         System.out.println(" 0번\n 0~9까지 숫자를 출력\n 각 숫자가 홀수인지 짝수인지 출력한다.");

@@ -1,4 +1,8 @@
 package Answer;
+/*
+합계 : 1054
+마지막으로 더한 값 : 55
+*/
 
 public class Answer017 {
 

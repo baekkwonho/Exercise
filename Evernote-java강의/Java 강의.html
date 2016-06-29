@@ -1,8 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="exporter-version" content="Evernote Mac 6.7.1 (453574)"/><meta name="keywords" content="강의"/><meta name="author" content="tiger5316@naver.com"/><meta name="created" content="2016-06-01 00:16:52 +0000"/><meta name="source-url" content="https://mail.naver.com/?n=1464741105028&amp;v=f#%7B%22fClass%22%3A%22read%22%2C%22oParameter%22%3A%7B%22charset%22%3A%22%22%2C%22prevNextMail%22%3Atrue%2C%22threadMail%22%3Atrue%2C%22mailSN%22%3A%2231146%22%2C%22previewMode%22%3A2%7D%7D"/><meta name="updated" content="2016-06-29 00:12:26 +0000"/><title>Java 강의</title></head><body>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="exporter-version" content="Evernote Mac 6.7.1 (453574)"/><meta name="keywords" content="강의"/><meta name="author" content="tiger5316@naver.com"/><meta name="created" content="2016-06-01 00:16:52 +0000"/><meta name="source-url" content="https://mail.naver.com/?n=1464741105028&amp;v=f#%7B%22fClass%22%3A%22read%22%2C%22oParameter%22%3A%7B%22charset%22%3A%22%22%2C%22prevNextMail%22%3Atrue%2C%22threadMail%22%3Atrue%2C%22mailSN%22%3A%2231146%22%2C%22previewMode%22%3A2%7D%7D"/><meta name="updated" content="2016-06-29 08:09:09 +0000"/><title>Java 강의</title></head><body>
 <div>22일차 (06.29)</div>
 <div><br/></div>
+<div>Domain Object  =  VO ( Value Object) - DTO ( Data Transfer Object)</div>
+<div><br/></div>
+<div> 
+<div><br/></div>
+<div><b>#상속 ( Inheritance )</b></div>
+<div> - 기존 코드를 재사용하기 위한 방법  </div>
+<div> - 기존 코드 재사용의 장점 </div>
+<ol>
+<li> 중복 코딩 필요 없다. -&gt; 개발비 절감</li>
+<li>검증된 코드 (Best Practice)(BP) 사용 -&gt; 안전된 코딩</li>
+</ol>
+<div> -ex&gt; public class B extends A </div>
+<div> -&gt; B는 A 의 역할 및 기능을 확장한다. / B클래스는 A클래스의 코드를 직접 사용할 수 있다.</div>
+</div>
+<div>  -&gt; A클래스의 인스턴스 변수 선언 코드가 자기 것인양 사용한다.</div>
+<div><br/></div>
+<div>#상속을 해주는 클래스 : 슈퍼(super)클래스, 부모(parent)클래스</div>
+<div>#상속을 받는 클래스 : 서브(sub)클래스, 자식(child)클래스</div>
+<div><br/></div>
+<div><br/></div>
+<div># 슈퍼 클래스에서 기본생성자를 제외하고 생성자를 만들어 놓은 경우</div>
+<div>   서브 클래스에서 상속 받는 즉시 컴파일 오류가 난다.</div>
+<div>   해결방법으로 1) 슈퍼 클래스에 기본생성자 추가</div>
+<div>                       2) 서브 클래스에서 기본생성자 추가 후 슈퍼클래스 super(1) 명령으로 호출</div>
+<div><br/></div>
+<div># 인스턴스 블록 </div>
+<div>  -인스턴스를 만들 때 마다 인스턴스 블록은 선언된 순서대로 실행된다.</div>
+<div>   - 모든 인스턴스 블록이 실행된 후 마지막으로 생성자가 호출된다.</div>
 <div><br/></div>
 <div><br/></div>
 <div><br/></div>
@@ -26,14 +54,6 @@
 <div><br/></div>
 <div><b>#추상화 (abstraction)</b>  -&gt; (상속, 다형성, 캡슐화)</div>
 <div> - 업무를 분석하여 그 업무를 처리할 클래스를 식별 하는 것</div>
-<div><br/></div>
-<div><b>#상속 ( Inheritance )</b></div>
-<div> - 기존 코드를 재사용하기 위한 방법</div>
-<div> -ex&gt; public class B extends A </div>
-<div> -&gt; B는 A 의 역할 및 기능을 확장한다. / B클래스는 A클래스의 코드를 직접 사용할 수 있다.</div>
-<div>  -&gt; A클래스의 인스턴스 변수 선언 코드가 자기 것인양 사용한다.</div>
-<div><br/></div>
-<div> </div>
 <div><br/></div>
 <div><br/></div>
 <div>
@@ -78,6 +98,57 @@
 <div><br/></div>
 <div>17일차 (06.22)</div>
 <div><br/></div>
+<table cellspacing="0" cellpadding="0" style="border-collapse: collapse; table-layout: fixed;width:91.26365054602185%;">
+<tr>
+<td valign="bottom" style="background-color: #ffffff; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;width:49.059829059829056%;">
+<p style=""><font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">다른</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">패키지의</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">클래스를</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">사용할</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">수</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">있다</font><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">.</font></p>
+</td>
+<td valign="bottom" style="background-color: #ffffff; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;width:50.76923076923077%;">
+<p style=""><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">import</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">사용법</font></p>
+</td>
+</tr>
+<tr>
+<td valign="bottom" style=" background-color: #ffffff; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;">
+<p style=""><font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">레퍼런스</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">배열을</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">선언하고</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">사용할</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">수</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">있다</font><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">.</font></p>
+</td>
+<td valign="bottom" style=" background-color: #ffffff; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;">
+<p style=""><font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">레퍼런스</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">배열에</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">대한</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">이해</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">및</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">선언하는</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">방법</font></p>
+</td>
+</tr>
+<tr>
+<td valign="bottom" style=" border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;">
+<p style=" font: 12.0px Helvetica; min-height: 14.0px;"><br/></p>
+</td>
+<td valign="bottom" style=" background-color: #ffffff; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;">
+<p style=""><font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">레퍼런스</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">배열을</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">잘못</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">사용하는</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">사례</font></p>
+</td>
+</tr>
+<tr>
+<td valign="bottom" style=" background-color: #ffffff; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;">
+<p style=""><font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">프로그래밍</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">연습</font><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">:</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">레퍼런스</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">배열</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">사용</font></p>
+</td>
+<td valign="bottom" style=" background-color: #ffffff; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;">
+<p style=""><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">1</font><font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">단계</font><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">:</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">한</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">개의</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">데이터</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">입력</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">받기</font></p>
+</td>
+</tr>
+<tr>
+<td valign="bottom" style=" border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;">
+<p style=" font: 12.0px Helvetica; min-height: 14.0px;"><br/></p>
+</td>
+<td valign="bottom" style=" background-color: #ffffff; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;">
+<p style=""><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">2</font><font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">단계</font><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">:</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">반복해서</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">데이터</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">입력</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">받기</font></p>
+</td>
+</tr>
+<tr>
+<td valign="bottom" style=" border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;">
+<p style=" font: 12.0px Helvetica; min-height: 14.0px;"><br/></p>
+</td>
+<td valign="bottom" style=" background-color: #ffffff; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;">
+<p style=""><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">3</font><font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">단계</font><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">:</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">입력</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">받은</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">데이터를</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">배열에</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">보관하기</font></p>
+</td>
+</tr>
+</table>
+<div><br/></div>
 <div># board.printInfo(); 3가지 의미</div>
 <div><br/></div>
 <div> 1) board 인스턴스에 printInfo 메서드를 수행하라.</div>
@@ -111,6 +182,43 @@
 <hr/></div>
 <div><br/></div>
 <div>16일차 (06.21)</div>
+<div><br/></div>
+<table cellspacing="0" cellpadding="0" style="border-collapse: collapse;width:553px;">
+<tbody>
+<tr>
+<td valign="bottom" style="background-color: #ffffff; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;width:49.90958408679928%;">
+<p style=""><font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">생성자를</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">사용할</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">수</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">있다</font><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">.</font></p>
+</td>
+<td valign="bottom" style="background-color: #ffffff; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;width:49.90958408679928%;">
+<p style=""><font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">생성자의</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">용도와</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">사용법</font></p>
+</td>
+</tr>
+<tr>
+<td valign="bottom" style=" background-color: #ffffff; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;">
+<p style=""><font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">기본</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">생성자와</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">파라미터가</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">있는</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">생성자를</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">설명할</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">수</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">있다</font><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">.</font></p>
+</td>
+<td valign="bottom" style=" background-color: #ffffff; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;">
+<p style=""><font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">기본</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">생성자의</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">의미</font><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">,</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">파라미터가</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">있는</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">생성자</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">정의와</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">사용</font></p>
+</td>
+</tr>
+<tr>
+<td valign="bottom" style=" background-color: #ffffff; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;">
+<p style=""><font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">생성자에서</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">다른</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">생성자를</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">호출할</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">수</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">있다</font><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">.</font></p>
+</td>
+<td valign="bottom" style=" background-color: #ffffff; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;">
+<p style=""><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">this()</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">사용법</font></p>
+</td>
+</tr>
+<tr>
+<td valign="bottom" style=" background-color: #ffffff; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;">
+<p style=""><font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">사용자가</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">키보드로</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">입력한</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">값을</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">받을</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">수</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">있다</font><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">.</font></p>
+</td>
+<td valign="bottom" style=" background-color: #ffffff; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;">
+<p style=""><a href="http://System.in"><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">System.in</font></a><font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">과</font> <font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">Scanner</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">사용법</font></p>
+</td>
+</tr>
+</tbody>
+</table>
 <div><br/></div>
 <div>#생성자</div>
 <div> - 인스턴스를 생성한 후 자동으로 호출되는 특별한 메서드</div>
@@ -152,6 +260,33 @@
 <div><br/></div>
 <div>15일차 (06.20)</div>
 <div><br/></div>
+<table cellspacing="0" cellpadding="0" style="border-collapse: collapse;width:593px;">
+<tr>
+<td valign="bottom" style="background-color: #ffffff; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;width:33.726812816188875%;">
+<p style=""><font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">클래스가</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">로딩되는</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">과정을</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">설명할</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">수</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">있다</font><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">.</font></p>
+</td>
+<td valign="bottom" style="background-color: #ffffff; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;width:66.10455311973018%;">
+<p style=""><font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">클래스</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">로딩과</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">스태틱</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">변수</font><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">,</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">스태틱</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">블록</font></p>
+</td>
+</tr>
+<tr>
+<td valign="bottom" style=" background-color: #ffffff; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;">
+<p style=""><font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">프로그래밍</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">연습</font><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">:</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">값</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">객체</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">정의</font></p>
+</td>
+<td valign="bottom" style=" background-color: #ffffff; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;">
+<p style=""><font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">사용자</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">정의</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">데이터</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">타입</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">만들기</font><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">:</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">게시물</font><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">,</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">책</font><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">,</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">자동차</font><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">,</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">연락처</font><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">,</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">주문</font><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">,</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">사용자</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">정보</font></p>
+</td>
+</tr>
+<tr>
+<td valign="bottom" style=" border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;">
+<p style=" font: 12.0px Helvetica; min-height: 14.0px;"><br/></p>
+</td>
+<td valign="bottom" style=" border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;">
+<p style=" font: 12.0px Helvetica; min-height: 14.0px;"><br/></p>
+</td>
+</tr>
+</table>
+<div><br/></div>
 <div>#메모리의 용도</div>
 <div><br/></div>
 <div>code segment : 메모리 안에 명령어가 들어있는 조각</div>
@@ -182,6 +317,80 @@
 <div><br/></div>
 <div>14일차 (06.17)</div>
 <div><br/></div>
+<table cellspacing="0" cellpadding="0" style="border-collapse: collapse;width:641px;">
+<tr>
+<td valign="bottom" style="background-color: #ffffff; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;width:42.90171606864275%;">
+<p style=""><font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">프로그래밍</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">연습</font><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">: OOP</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">구조</font></p>
+</td>
+<td valign="bottom" style="background-color: #ffffff; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;width:56.94227769110765%;">
+<p style=""><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">1</font><font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">단계</font><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">:</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">자주</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">사용할</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">명령어를</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">별도의</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">블록으로</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">묶어</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">놓는다</font><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">.</font></p>
+</td>
+</tr>
+<tr>
+<td valign="bottom" style=" border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;">
+<p style=" font: 12.0px Helvetica; min-height: 14.0px;"><br/></p>
+</td>
+<td valign="bottom" style=" background-color: #ffffff; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;">
+<p style=""><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">2</font><font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">단계</font><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">:</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">클래스</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">문법을</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">사용하여</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">메서드를</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">분류한다</font><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">.</font></p>
+</td>
+</tr>
+<tr>
+<td valign="bottom" style=" border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;">
+<p style=" font: 12.0px Helvetica; min-height: 14.0px;"><br/></p>
+</td>
+<td valign="bottom" style=" background-color: #ffffff; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;">
+<p style=""><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">3</font><font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">단계</font><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">:</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">메서드가</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">공통으로</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">사용하는</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">데이터는</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">클래스</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">변수</font><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">(static</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">변수</font><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">)</font><font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">에</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">저장해두자</font><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">!</font></p>
+</td>
+</tr>
+<tr>
+<td valign="bottom" style=" border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;">
+<p style=" font: 12.0px Helvetica; min-height: 14.0px;"><br/></p>
+</td>
+<td valign="bottom" style=" background-color: #ffffff; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;">
+<p style=""><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">3</font><font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">단계</font><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">(</font><font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">계속</font><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">):</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">스태틱</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">변수의</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">한계</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">경험</font></p>
+</td>
+</tr>
+<tr>
+<td valign="bottom" style=" border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;">
+<p style=" font: 12.0px Helvetica; min-height: 14.0px;"><br/></p>
+</td>
+<td valign="bottom" style=" background-color: #ffffff; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;">
+<p style=""><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">4</font><font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">단계</font><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">:</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">메서드와</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">데이터</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">타입의</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">결합</font></p>
+</td>
+</tr>
+<tr>
+<td valign="bottom" style=" border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;">
+<p style=" font: 12.0px Helvetica; min-height: 14.0px;"><br/></p>
+</td>
+<td valign="bottom" style=" background-color: #ffffff; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;">
+<p style=""><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">5</font><font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">단계</font><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">:</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">데이터</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">타입의</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">연사자로서</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">메서드를</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">정의하기</font></p>
+</td>
+</tr>
+<tr>
+<td valign="bottom" style=" background-color: #ffffff; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;">
+<p style=""><font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">클래스를</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">실행하는</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">절차를</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">설명할</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">수</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">있다</font><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">.</font></p>
+</td>
+<td valign="bottom" style=" background-color: #ffffff; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;">
+<p style=""><font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">클래스</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">실행</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">절차</font></p>
+</td>
+</tr>
+<tr>
+<td valign="bottom" style=" background-color: #ffffff; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;">
+<p style=""><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">JVM</font><font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">이</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">관리하는</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">세</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">개의</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">메모리</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">영역과</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">변수와의</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">관계를</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">이해한다</font><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">.</font></p>
+</td>
+<td valign="bottom" style=" background-color: #ffffff; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;">
+<p style=""><font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">스태틱</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">변수</font><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">,</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">인스턴스</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">변수</font><font face="Trebuchet MS" size="3" color="#000000" style="font: 12.0px 'Trebuchet MS'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">,</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">로컬</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">변수와</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">메모리</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">영역과의</font> <font face="Apple SD Gothic Neo" size="3" color="#000000" style="font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none; font-variant-ligatures: common-ligatures; color: #000000; -webkit-text-stroke: 0px #000000">관계</font></p>
+</td>
+</tr>
+<tr>
+<td valign="bottom" style=" border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;">
+<p style=" font: 12.0px Helvetica; min-height: 14.0px;"><br/></p>
+</td>
+<td valign="bottom" style=" border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #aaaaaa #aaaaaa #aaaaaa #aaaaaa; padding: 0.0px 2.0px 2.0px 2.0px;">
+<p style=" font: 12.0px Helvetica; min-height: 14.0px;"><br/></p>
+</td>
+</tr>
+</table>
 <div><br/></div>
 <div><b># JVM이 클래스를 실행하는 절차</b></div>
 <div><br/></div>
@@ -328,10 +537,10 @@
 <table style="-evernote-table:true;border-collapse:collapse;table-layout:fixed;width:100%;">
 <tbody>
 <tr>
-<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:50.70202808112324%;">
+<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:51.326053042121686%;">
 <div>스태틱 변수의 한계를 설명할 수 있다.</div>
 </td>
-<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:49.141965678627145%;">
+<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:48.517940717628704%;">
 <div>스태틱 변수의 특징과 사용에서 한계점</div>
 </td>
 </tr>
@@ -427,10 +636,10 @@
 <table style="-evernote-table:true;border-collapse:collapse;table-layout:fixed;width:100%;">
 <tbody>
 <tr>
-<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:50.70202808112324%;">
+<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:51.326053042121686%;">
 <div>비트 이동 연산자를 사용하고 활용할 수 있다.</div>
 </td>
-<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:49.141965678627145%;">
+<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:48.517940717628704%;">
 <div>비트 이동 연산자 &lt;&lt;, &gt;&gt;, &gt;&gt;&gt;를 사용하는 방법</div>
 </td>
 </tr>
@@ -634,10 +843,10 @@
 <table style="-evernote-table:true;border-collapse:collapse;table-layout:fixed;width:100%;">
 <tbody>
 <tr>
-<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:50.70202808112324%;">
+<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:51.326053042121686%;">
 <div>유니코드 문자를 다룰 수 있다.</div>
 </td>
-<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:49.141965678627145%;">
+<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:48.517940717628704%;">
 <div>문자에 대한 유니코드 값을 직접 입력하는 방법과 작은 따옴표를 이용하는 방법</div>
 </td>
 </tr>
@@ -882,18 +1091,18 @@
 <table style="-evernote-table:true;border-collapse:collapse;table-layout:fixed;width:100%;">
 <tbody>
 <tr>
-<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:25.897035881435258%;">
+<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:26.521060842433698%;">
 <div>
 <div><br/></div>
  자료형</div>
 </td>
-<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:25.585023400936034%;">
+<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:26.209048361934478%;">
 <div>데이터</div>
 </td>
-<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:24.180967238689547%;">
+<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:23.556942277691107%;">
 <div>메모리 크기</div>
 </td>
-<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:24.180967238689547%;">
+<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:23.556942277691107%;">
 <div>표현 가능 범위</div>
 </td>
 </tr>
@@ -1030,10 +1239,10 @@
 <table style="-evernote-table:true;border-collapse:collapse;table-layout:fixed;width:100%;">
 <tbody>
 <tr>
-<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:50.70202808112324%;">
+<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:51.326053042121686%;">
 <div>소스 파일과 .class 파일을 분리하여 관리할 수 있다.</div>
 </td>
-<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:49.141965678627145%;">
+<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:48.517940717628704%;">
 <div>자바 컴파일러의 -d 옵션 사용법</div>
 </td>
 </tr>
@@ -1489,10 +1698,10 @@
 <table style="-evernote-table:true;border-collapse:collapse;table-layout:fixed;width:100%;">
 <tbody>
 <tr>
-<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:50.70202808112324%;">
+<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:51.326053042121686%;">
 <div>중첩 반복문을 사용할 수 있다.</div>
 </td>
-<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:49.141965678627145%;">
+<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:48.517940717628704%;">
 <div>for 중첩 사용</div>
 </td>
 </tr>
@@ -1675,10 +1884,10 @@
 <table style="-evernote-table:true;border-collapse:collapse;table-layout:fixed;width:100%;">
 <tbody>
 <tr>
-<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:50.70202808112324%;">
+<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:51.326053042121686%;">
 <div>관계 연산자를 사용할 수 있다.</div>
 </td>
-<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:49.141965678627145%;">
+<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:48.517940717628704%;">
 <div>관계 연산자의 종류와 사용법</div>
 </td>
 </tr>
@@ -1789,10 +1998,10 @@
 <table style="-evernote-table:true;border-collapse:collapse;table-layout:fixed;width:100%;">
 <tbody>
 <tr>
-<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:50.70202808112324%;">
+<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:51.326053042121686%;">
 <div>배열을 만들고 사용할 수 있다.</div>
 </td>
-<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:49.141965678627145%;">
+<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:48.517940717628704%;">
 <div>배열을 선언하는 방법, 초기화 하는 방법, 값 넣고 꺼내는 방법</div>
 </td>
 </tr>
@@ -1864,10 +2073,10 @@
 <table style="-evernote-table:true;border-collapse:collapse;table-layout:fixed;width:100%;">
 <tbody>
 <tr>
-<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:50.70202808112324%;">
+<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:51.326053042121686%;">
 <div>소스 파일에 주석을 작성할 수 있다.</div>
 </td>
-<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:49.141965678627145%;">
+<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:48.517940717628704%;">
 <div>여러 줄 주석, 한 줄 주석, Javadoc 주석, 애노테이션 주석</div>
 </td>
 </tr>
@@ -2013,10 +2222,10 @@
 <table style="-evernote-table:true;border-collapse:collapse;table-layout:fixed;width:100%;">
 <tbody>
 <tr>
-<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:50.70202808112324%;">
+<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:51.326053042121686%;">
 <div>컴퓨터 구조와 프로그래밍 실행 원리를 이해한다.</div>
 </td>
-<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:49.141965678627145%;">
+<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:48.517940717628704%;">
 <div>CPU, RAM, HDD의 연결 구조</div>
 </td>
 </tr>
@@ -2158,10 +2367,10 @@
 <table style="-evernote-table:true;border-collapse:collapse;table-layout:fixed;width:100%;">
 <tbody>
 <tr>
-<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:50.70202808112324%;">
+<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:51.326053042121686%;">
 <div>프로그램의 다양한 호칭을 이해한다.</div>
 </td>
-<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:49.141965678627145%;">
+<td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:48.517940717628704%;">
 <div>.txt, .pdf, .mp4, .ppt, .xls 등 사용자들이 자주 실행하는 파일과 프로그램</div>
 </td>
 </tr>

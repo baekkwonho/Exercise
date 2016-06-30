@@ -16,8 +16,9 @@ public class Exercise {
         System.out.println(" 0(짝수) 1(홀수) 2(짝수) ....");
         break;
       case 1 :
-        System.out.println(" 1번\n ");
-        System.out.println(" ");
+        System.out.println(" 1번\n {3, 6, 8, 4, 12, 1, 9, 7} 배열이 있다.");
+        System.out.println(" while문과 버블소트를 이용하여 정렬 하세요.");
+        System.out.println(" 1 3 4 6 7 8 9 12 ");
         break;
       case 2 :
         System.out.println(" 2번 \n 숫자를 입력받아서 그 숫자에 포함된 홀수와 짝수를 센다.");
@@ -145,7 +146,7 @@ public class Exercise {
 
       case 28 :
         System.out.println(" 28번 \n 숫자를 입력받아서 그 수 들의 합을 구하라");
-        System.out.println(" > java exercise 11125\n 합계 : 10");
+        System.out.println(" > 숫자를 입력 하세요. 11125\n 합계 : 10");
         break;
 
       case 29 :
@@ -205,7 +206,7 @@ public class Exercise {
         break;
 
       case 41 :
-        System.out.println(" 41번\n 수를 입력 받아 0 ~ 입력받은 수까지 출력한다");
+        System.out.println(" 41번\n 수를 입력 받아 0부터 입력받은 수까지 출력한다");
         break;
 
       case 42 :

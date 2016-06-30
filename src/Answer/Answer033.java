@@ -10,6 +10,16 @@ package Answer;
 2 * 8 = 16
 2 * 9 = 18
 
+3 * 1 = 3
+3 * 2 = 6
+3 * 3 = 9
+3 * 4 = 12
+3 * 5 = 15
+3 * 6 = 18
+3 * 7 = 21
+3 * 8 = 24
+3 * 9 = 27
+
 4 * 1 = 4
 4 * 2 = 8
 4 * 3 = 12
@@ -29,6 +39,16 @@ package Answer;
 5 * 7 = 35
 5 * 8 = 40
 5 * 9 = 45
+
+6 * 1 = 6
+6 * 2 = 12
+6 * 3 = 18
+6 * 4 = 24
+6 * 5 = 30
+6 * 6 = 36
+6 * 7 = 42
+6 * 8 = 48
+6 * 9 = 54
 
 7 * 1 = 7
 7 * 2 = 14
@@ -50,27 +70,30 @@ package Answer;
 8 * 8 = 64
 8 * 9 = 72
 
+9 * 1 = 9
+9 * 2 = 18
+9 * 3 = 27
+9 * 4 = 36
+9 * 5 = 45
+9 * 6 = 54
+9 * 7 = 63
+9 * 8 = 72
+9 * 9 = 81
 */
-
-public class Answer037 {
+public class Answer033 {
 
   public static void main(String[] args) {
 
     int i = 2;
-    int j = 1;
-
+    
     while (i <= 9) {
-      j = 1;
+      int j = 1;
       while (j <= 9) {
         System.out.printf("%d * %d = %d\n", i, j, i * j);
         j++;
       }
       System.out.println();
-      i ++;
-      if (i % 3 == 0) {
-        i ++;
-      }
+      i++;
     }
-
   }
 }

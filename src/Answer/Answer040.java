@@ -1,5 +1,11 @@
 package Answer;
-
+/*
+수를 입력 하세요(음수는 종료) : 5
+홀수 입니다.
+수를 입력 하세요(음수는 종료) : 4
+짝수 입니다.
+수를 입력 하세요(음수는 종료) : -1
+*/
 import java.util.Scanner;
 
 public class Answer040 {

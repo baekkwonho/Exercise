@@ -1,5 +1,12 @@
 package Answer;
-
+/*
+0
+1
+3
+6
+10
+15
+*/
 public class Answer031 {
 
   public static void main(String[] args) {

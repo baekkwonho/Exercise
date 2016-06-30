@@ -1,4 +1,13 @@
 package Answer;
+/*
+숫자를 입력 하세요: 5
+0
+1
+2
+3
+4
+5
+*/
 
 import java.util.Scanner;
 

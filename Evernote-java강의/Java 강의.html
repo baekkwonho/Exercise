@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="exporter-version" content="Evernote Mac 6.7.1 (453574)"/><meta name="keywords" content="강의"/><meta name="author" content="tiger5316@naver.com"/><meta name="created" content="2016-06-01 00:16:52 +0000"/><meta name="source-url" content="https://mail.naver.com/?n=1464741105028&amp;v=f#%7B%22fClass%22%3A%22read%22%2C%22oParameter%22%3A%7B%22charset%22%3A%22%22%2C%22prevNextMail%22%3Atrue%2C%22threadMail%22%3Atrue%2C%22mailSN%22%3A%2231146%22%2C%22previewMode%22%3A2%7D%7D"/><meta name="updated" content="2016-06-29 08:09:09 +0000"/><title>Java 강의</title></head><body>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="exporter-version" content="Evernote Mac 6.7.1 (453574)"/><meta name="keywords" content="강의"/><meta name="author" content="tiger5316@naver.com"/><meta name="created" content="2016-06-01 00:16:52 +0000"/><meta name="source-url" content="https://mail.naver.com/?n=1464741105028&amp;v=f#%7B%22fClass%22%3A%22read%22%2C%22oParameter%22%3A%7B%22charset%22%3A%22%22%2C%22prevNextMail%22%3Atrue%2C%22threadMail%22%3Atrue%2C%22mailSN%22%3A%2231146%22%2C%22previewMode%22%3A2%7D%7D"/><meta name="updated" content="2016-06-30 08:01:31 +0000"/><title>Java 강의</title></head><body>
+<div><br/></div>
+<div>23일차 (06.30)</div>
+<div><br/></div>
+<div><b>#다형성 (polymorphism) </b></div>
+<div>#다형적 변수</div>
+<div>-  ex&gt; Car car = new Car(); </div>
+<div>-  car(다형적 변수)는 Car자신의 인스턴스를 생성 할 수 있다.</div>
+<div>-  또한, Car의 서브클래스 들도 생성 할 수 있다.</div>
+<div>-  서브 클래스 타입으로 다형적 변수를 생성 시 수퍼클래스가 올 수 없다.</div>
+<div> 용도?</div>
+<div>  - 서브 클래스의 인스턴스도 가리킬 수 있기 때문에 특정 객체를 다른 객체로 교체 하기가 쉽다.</div>
+<div><br/></div>
+<div><b>#오버라이딩(Overriding)</b></div>
+<div>-  상속 받은 메서드를 현재 클래스의 역할에 맞게  재정의 하는 것</div>
+<div>-  바로 위 클래스의 메서드를 재정의 하는 것이 아니라, 조상 중에 한 클래스에서 받아온 메서드를 재정의 한다.</div>
+<div>-  super 는 상위클래스로 가는 의미가 아니라, 오직 자신(현재클래스)이 재정의 하기 한단계 전을 의미 한다.</div>
+<div>   전 전 단계를 호출 할 수 없다.</div>
+<div><br/></div>
+<div><b>#오버로딩(Overloading)</b> </div>
+<div>-  파라미터의 종류나 파라미터의 개수가 다르더라도 같은 기능을 수행하는 메서드에 대해 같은 이름을 부여함으로써       프로그래밍의 일관성을 유지하게 하는 문법</div>
+<div>-  </div>
+<div><br/></div>
+<div><br/></div>
+<div><br/></div>
+<div><br/></div>
+<div>
+<hr/></div>
+<div><br/></div>
 <div>22일차 (06.29)</div>
 <div><br/></div>
 <div>Domain Object  =  VO ( Value Object) - DTO ( Data Transfer Object)</div>
@@ -15,9 +43,11 @@
 <li>검증된 코드 (Best Practice)(BP) 사용 -&gt; 안전된 코딩</li>
 </ol>
 <div> -ex&gt; public class B extends A </div>
-<div> -&gt; B는 A 의 역할 및 기능을 확장한다. / B클래스는 A클래스의 코드를 직접 사용할 수 있다.</div>
 </div>
-<div>  -&gt; A클래스의 인스턴스 변수 선언 코드가 자기 것인양 사용한다.</div>
+<div> -&gt; B는 A 의 역할 및 기능을 확장한다. / B클래스는 A클래스의 코드를 직접 사용할 수 있다.</div>
+<div> -&gt; A클래스의 인스턴스 변수 선언 코드가 자기 것인양 사용한다.</div>
+<div> -&gt; A클래스의 데이터를 B클래스에 포함 되는 것이 아니다. B는 A를 가르키는 링크만 있을 뿐이다.</div>
+<div> </div>
 <div><br/></div>
 <div>#상속을 해주는 클래스 : 슈퍼(super)클래스, 부모(parent)클래스</div>
 <div>#상속을 받는 클래스 : 서브(sub)클래스, 자식(child)클래스</div>
@@ -535,7 +565,6 @@
 <div><br/></div>
 <div>학습목표</div>
 <table style="-evernote-table:true;border-collapse:collapse;table-layout:fixed;width:100%;">
-<tbody>
 <tr>
 <td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:51.326053042121686%;">
 <div>스태틱 변수의 한계를 설명할 수 있다.</div>
@@ -616,7 +645,6 @@
 <div>6단계, 인스턴스 변수를 보다 쉽게 다룰 수 있는 인스턴스 메서드 사용하기</div>
 </td>
 </tr>
-</tbody>
 </table>
 <div><br/></div>
 <div><br/></div>
@@ -634,7 +662,6 @@
 <div><br/></div>
 <div>학습목표</div>
 <table style="-evernote-table:true;border-collapse:collapse;table-layout:fixed;width:100%;">
-<tbody>
 <tr>
 <td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:51.326053042121686%;">
 <div>비트 이동 연산자를 사용하고 활용할 수 있다.</div>
@@ -771,7 +798,6 @@
 <div>스태틱 변수와 로컬 변수, 인스턴스 변수의 차이점</div>
 </td>
 </tr>
-</tbody>
 </table>
 <div><br/></div>
 <div><br/></div>

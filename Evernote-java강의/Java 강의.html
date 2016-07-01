@@ -1,6 +1,88 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="exporter-version" content="Evernote Mac 6.7.1 (453574)"/><meta name="keywords" content="강의"/><meta name="author" content="tiger5316@naver.com"/><meta name="created" content="2016-06-01 00:16:52 +0000"/><meta name="source-url" content="https://mail.naver.com/?n=1464741105028&amp;v=f#%7B%22fClass%22%3A%22read%22%2C%22oParameter%22%3A%7B%22charset%22%3A%22%22%2C%22prevNextMail%22%3Atrue%2C%22threadMail%22%3Atrue%2C%22mailSN%22%3A%2231146%22%2C%22previewMode%22%3A2%7D%7D"/><meta name="updated" content="2016-06-30 08:01:31 +0000"/><title>Java 강의</title></head><body>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="exporter-version" content="Evernote Mac 6.7.1 (453574)"/><meta name="keywords" content="강의"/><meta name="author" content="tiger5316@naver.com"/><meta name="created" content="2016-06-01 00:16:52 +0000"/><meta name="source-url" content="https://mail.naver.com/?n=1464741105028&amp;v=f#%7B%22fClass%22%3A%22read%22%2C%22oParameter%22%3A%7B%22charset%22%3A%22%22%2C%22prevNextMail%22%3Atrue%2C%22threadMail%22%3Atrue%2C%22mailSN%22%3A%2231146%22%2C%22previewMode%22%3A2%7D%7D"/><meta name="updated" content="2016-07-01 07:46:19 +0000"/><title>Java 강의</title></head><body>
+<div><br/></div>
+<div>24일차 (07.01)</div>
+<div><br/></div>
+<div>#Object class</div>
+<div>- 자바의 모든 클래스는 object의 서브 클래스이다.</div>
+<div>- Object는 자바의 상속 계층에서  최상위 클래스이다.</div>
+<div>- 상속 받는다고 선언하지 않으면 컴파일러가 자동으로 상속한다.</div>
+<div>- Object는 자바 객체가 기본으로 가져야할 필수 변수와 베서드를 상속 해 준다.</div>
+<div><br/></div>
+<div>#toString()</div>
+<div>- 인스턴스의 정보 리턴</div>
+<div>- 클래스명@인스턴스식별번호(hashcode)</div>
+<div>- 인스턴스의 간략 정보를 리턴할 때 사용한다. 기본으로 출력하는 내용은 너무 코드 스럽다.</div>
+<div>- 기본적으로 출력되는 것이 맘에 안들어 재정의 해서 사용 한다.</div>
+<div><br/></div>
+<div>#hashCode()</div>
+<div>- 인스턴스의 식별 코드 리턴</div>
+<div>- 인스턴스를 맵에 저장할 때 태그로 사용한다.</div>
+<div>- 인스턴스끼리 비교할 때 사용한다.</div>
+<div><br/></div>
+<div><br/></div>
+<div>#equals()</div>
+<div>- 두 인스턴스의 비교 결과 리턴한다. 같은 인스턴스이면 true, 다르면 false</div>
+<div>- object로 부터 상속받은 equals 는 주소 값을 비교 한다.</div>
+<div>- String처럼 해당 주소에 같은 값을 비교 하고 싶으면 override하여 사용 해야 한다.</div>
+<div>- String 은 재정의가 되어 있는가? String 의 타입인 경우 equals 사용 시 같은 값인지 비교가 가능하다. </div>
+<div><br/></div>
+<div>#getClass()</div>
+<div>- 인스턴스가 어떤 클래스인지 그 정보를 리턴한다.</div>
+<div>- 설계도의 주소를 찾아간다,</div>
+<div><br/></div>
+<div>#finalize()</div>
+<div>- 가비지 컬렉터가 인스턴스를 메모리에서 해제하기 전에 호출하는 메서드</div>
+<div>- 보통 인스턴스가 사용했던 자원을 해제시키는 작업을 한다.</div>
+<div>- 그러나 가비지 컬렉터가 언제 호출 될지 알 수 없고, 프로그램이 종료될 때 까지 메모리가 부족하지 않다면</div>
+<div>  가비리 컬렉터가 실행되지 않기 때문에 호출되지 않을 수 있다.</div>
+<div><br/></div>
+<div>#String 클래스</div>
+<div>- String 클래스는 문자열을 저장하기 위해서 char[ ] 배열을 사용 한다.</div>
+<div>- 즉, String 인스턴스를 생성하면 , Heap 영역에 문자열을 저장하기 위한 char[ ]  배열을 준비한다.</div>
+<div>- ex&gt; String s1 = new String(“aaa”) -&gt; String s1 = “aaa” </div>
+<div>- s1은 레퍼런스!!</div>
+<div><br/></div>
+<div># 일반 String 인스턴스 생성 </div>
+<div>- Heap 영역에 인스턴스가 존재</div>
+<div>- 가비지 컬렉션의 대상: 가비지가 되면 가비지 컬렉터가 메모리 해제할 것이다.</div>
+<div>- 일반 인스턴스이다.</div>
+<div><br/></div>
+<div># Literal String 인스턴스 생성 : contant string pool에 존재 </div>
+<div>- JVM이 종료할 때까지 유지된다.</div>
+<div>- 중복을 허용하지 않는 인스턴스. 중복 생성되지 않는다.</div>
+<div>- 메모리를 좀 더 효율적으로 사용하기 위해.</div>
+<div><br/></div>
+<div> - String s = "리터럴";</div>
+<div> - 리터럴(literal)로 생성한 스트링 인스턴스는 </div>
+<div> - 상수 스트링 풀(constant string pool)에서 관리한다.</div>
+<div> - 메모리를 효율적으로 관리하기 위해 </div>
+<div> - 값이 같은 인스턴스를 중복 생성하지 않는다.</div>
+<div>    </div>
+<div> # 리터럴(literal)?</div>
+<div> - 직접 코드로 값을 표현한 것. </div>
+<div> - int i = 10; // 리터럴? 10</div>
+<div> - float f = 3.14f; // 리터럴? 3.14f</div>
+<div> - boolean b = true; // 리터럴? true</div>
+<div> - String s = "ok"; // 리터럴? "ok"</div>
+<div><br/></div>
+<div># Mutable</div>
+<div>- Mutable 객체 : 값을 바꿀 수 있는 객체 </div>
+<div>- ex&gt; StringBuffer, StringBuilder</div>
+<div><br/></div>
+<div>#Immutable</div>
+<div>- Immutable 객체 : 값을 바꿀 수 없는 객체</div>
+<div>- ex &gt; String</div>
+<div><br/></div>
+<div><br/></div>
+<div><br/></div>
+<div><br/></div>
+<div><br/></div>
+<div><br/></div>
+<div><br/></div>
+<div>
+<hr/></div>
 <div><br/></div>
 <div>23일차 (06.30)</div>
 <div><br/></div>
@@ -12,6 +94,7 @@
 <div>-  서브 클래스 타입으로 다형적 변수를 생성 시 수퍼클래스가 올 수 없다.</div>
 <div> 용도?</div>
 <div>  - 서브 클래스의 인스턴스도 가리킬 수 있기 때문에 특정 객체를 다른 객체로 교체 하기가 쉽다.</div>
+<div>- 레퍼런스 변수는 다형적 변수 이다. 파라미터로 올수 있는 값은 파라미터로 오는 변수의 해당 서브 클래스도 모두 올 수 있다. </div>
 <div><br/></div>
 <div><b>#오버라이딩(Overriding)</b></div>
 <div>-  상속 받은 메서드를 현재 클래스의 역할에 맞게  재정의 하는 것</div>
@@ -56,7 +139,7 @@
 <div># 슈퍼 클래스에서 기본생성자를 제외하고 생성자를 만들어 놓은 경우</div>
 <div>   서브 클래스에서 상속 받는 즉시 컴파일 오류가 난다.</div>
 <div>   해결방법으로 1) 슈퍼 클래스에 기본생성자 추가</div>
-<div>                       2) 서브 클래스에서 기본생성자 추가 후 슈퍼클래스 super(1) 명령으로 호출</div>
+<div>                       2) 서브 클래스에서 기본생성자 추가 후 슈퍼클래스 super() 명령으로 호출</div>
 <div><br/></div>
 <div># 인스턴스 블록 </div>
 <div>  -인스턴스를 만들 때 마다 인스턴스 블록은 선언된 순서대로 실행된다.</div>

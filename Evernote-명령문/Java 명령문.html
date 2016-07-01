@@ -1,3 +1,96 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="exporter-version" content="Evernote Mac 6.7.1 (453574)"/><meta name="altitude" content="63.6452751159668"/><meta name="author" content="tiger5316@naver.com"/><meta name="created" content="2016-06-15 14:59:21 +0000"/><meta name="latitude" content="37.49453954076324"/><meta name="longitude" content="127.0278684730427"/><meta name="source" content="desktop.mac"/><meta name="updated" content="2016-06-21 07:55:39 +0000"/><title>Java 명령문</title></head><body><div><br/></div><div><b>#Scanner</b></div><div>&nbsp;&nbsp;- 특정 형식으로 데이터를 잘라 주는 도구</div><div>&nbsp;&nbsp;- java.util 에 있음</div><div>&nbsp;&nbsp;- ex> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: rgb(255, 0, 0);"><b>Scanner keyScanner = new Scanner(System.in);</b></span></div><div><span style="color: rgb(255, 0, 0);"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String str = keyScanner.nextLine(); </b></span></div><div><b>#System.in</b></div><div>&nbsp;&nbsp;- 키보드에 입력한 값을 읽어들이는 도구</div><div><br/></div><div><br/></div><div><b>#Date</b></div><div>- 오늘 날짜를 문자열로 얻는 기능</div><div>- java.sql 패키지에 있는 Date(int year, int month, int day)</div><div>- 현재 날짜 구하기 ex &gt; <span style="color: rgb(255, 0, 0);"><b>java.sql.Date today = new java.sql.Date(System.currentTimeMillis());</b></span></div><div>- 문자열로 바꾸기 ex> String str = today.toString(); &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </div><div><br/></div><div><br/></div><div><span style="color: rgb(255, 0, 0);"><b># project &nbsp;&nbsp;-> bin, src</b></span></div><div><span style="color: rgb(255, 0, 0);"><b><br/></b></span></div><div><span style="color: rgb(255, 0, 0);"><b>&gt; javac -encoding UTF-8 -d bin src/foldername/filename.java</b></span></div><div><span style="color: rgb(255, 0, 0);"><b>&gt; java bin foldername.filename</b></span></div><div>소스 디렉토리와 .class 디렉토리가 분리된 상태에서는 다른 클래스를 사용하는 클래스를 컴파일 할 때 -sourcepath 옵션을 붙어야 한다.</div><div><span style="color: rgb(255, 0, 0);"><b>&gt; javac -encoding UTF-8 -d bin -sourcepath src src/foldername/filename.java</b></span></div><div><br/></div><div><br/></div><div><b># Integer</b></div><div><br/></div><div>&nbsp;&nbsp;- int 변수 변수의 최대값 확인 => <span style="color: rgb(255, 0, 0);"><b>Integer.MAX_VALUE</b>;</span></div><div><font face="D2Coding">&nbsp;&nbsp;- Type 변환 (&nbsp;&nbsp;</font><span style="font-family: D2Coding;">String -&gt; Int )</span>&nbsp;&nbsp;:  <b><span style="color: rgb(255, 0, 0);">Integer.parseInt()</span></b></div><div><span style="color: rgb(255, 0, 0);"><b>&nbsp;&nbsp;</b></span>- 2진수로 출력 :</div><div>&nbsp;&nbsp;- 16진수로 출력 :&nbsp;&nbsp;</div><div><span style="color: rgb(255, 0, 0);"><br/></span></div><div><b># String</b></div><div><br/></div><div><span style="font-family: D2Coding;">&nbsp;&nbsp;- String -> char로 변환 <b>&nbsp;&nbsp; <span style="color: rgb(255, 0, 0);">charAt</span></b></span></div><div>&nbsp;&nbsp;&nbsp;&nbsp; ex> String s = "A"; &nbsp;&nbsp;or &nbsp;&nbsp;String[] s = {"A"} </div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;char c = s.charAt(0); &nbsp;&nbsp;or &nbsp;&nbsp;char c =  <span style="color: rgb(255, 38, 0);">s[0].charAt(0);</span></div><div><br/></div><div><font face="D2Coding"><b><span style="color: rgb(255, 0, 0);">&nbsp;&nbsp;</span>-</b>String -&gt; char[] 변환 <span style="color: rgb(255, 0, 0);"><b>&nbsp;&nbsp; toCharArray()</b></span></font></div><div><font face="D2Coding"><b>&nbsp;&nbsp;-</b> String[] -&gt; char[] 변환</font></div><div><span style="font-family: D2Coding;">&nbsp;&nbsp;&nbsp;&nbsp; ex> String str = "ABCDEFG"; or Stirng[] str = {"A"}; </span></div><div><span style="font-family: D2Coding;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; char[] ch1 = str. <span style="color: rgb(255, 0, 0);"><b>toCharArray(); or str[0].toCharArray();</b></span></span></div><div><br/></div><div><span style="font-family: D2Coding;">&nbsp;&nbsp;&nbsp;&nbsp; ch1의 배열이 생성 된다.&nbsp;&nbsp; </span></div><div><span style="font-family: D2Coding;">&nbsp;&nbsp;&nbsp;&nbsp; ch1 -> { 'A', 'B', 'C', 'D', 'E', 'F', 'G' } </span></div><div><font face="D2Coding"><br/></font></div><div><b>&nbsp;&nbsp;- 문자열을 대문자 or 소문자로 변환</b></div><div><br/></div><div>소문자로 만들기 &nbsp;&nbsp;-> toLowerCase() &nbsp;&nbsp;&nbsp;&nbsp; -> str. <span style="color: rgb(255, 0, 0);"><b>toLowerCase()</b></span></div><div>대문자로 만들기 &nbsp;&nbsp;-> toUpperCase() &nbsp;&nbsp;&nbsp;&nbsp; -> str. <span style="color: rgb(255, 0, 0);"><b>toUpperCase()</b></span></div><div><b><span style="color: rgb(255, 0, 0);"><br/></span></b></div><div><b><span style="font-family: D2Coding;">&nbsp;&nbsp;- 문자열 비교 방법</span></b></div><div><span style="font-family: D2Coding;">&nbsp;&nbsp;&nbsp;&nbsp; <b>==</b> -&gt; 사용 불가</span></div><div><span style="color: rgb(255, 0, 0);"><b><span style="font-family: D2Coding;">&nbsp;&nbsp;&nbsp;&nbsp;.equals("ABC") </span></b></span></div><div><span style="color: rgb(255, 0, 0);"><b>&nbsp;&nbsp;&nbsp;&nbsp;DataType이 Char인 경우는 == 사용&nbsp;&nbsp; </b></span></div><div><b><span style="color: rgb(255, 0, 0);"><br/></span></b></div><div><b><span style="color: rgb(255, 0, 0);"><br/></span></b></div><div><b><span style="color: rgb(255, 0, 0);">&nbsp;&nbsp;&nbsp;&nbsp;</span></b><b># Math</b></div><div><b><br/></b></div><div><span style="font-family: D2Coding;"><b>&nbsp;&nbsp;-</b> 절대값 구하기<b>.<span style="color: rgb(255, 0, 0);">&nbsp;&nbsp;</span> =&gt;<span style="color: rgb(255, 0, 0);">&nbsp;&nbsp;</span></b></span><span style="color: rgb(255, 0, 0);"><b><span style="font-family: D2Coding;">Math.abs(값)</span></b></span></div><div>&nbsp;&nbsp;- 랜덤변수 구하기 => <span style="color: rgb(255, 0, 0);"><b><span style="font-family: D2Coding;">Math.random()</span></b></span></div><ul><li><span style="font-family: D2Coding;">0&lt;= x &lt; 1</span></li><li><span style="font-family: D2Coding;">x는 부동소수점 ex) 0.007542, 0.2341</span></li><li><span style="font-family: D2Coding;">정수로 뽑고자 할경우 Math.random() * 10</span></li><li><span style="font-family: D2Coding;">Type은 부동소수점 이므로 double형</span></li><li><span style="font-family: D2Coding;">임시적 형변환으로 (int)이용하여 int로 변환</span></li></ul><div><br/></div><div><br/></div><div><br/></div></body></html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="exporter-version" content="Evernote Mac 6.7.1 (453574)"/><meta name="altitude" content="63.6452751159668"/><meta name="author" content="tiger5316@naver.com"/><meta name="created" content="2016-06-15 14:59:21 +0000"/><meta name="latitude" content="37.49453954076324"/><meta name="longitude" content="127.0278684730427"/><meta name="source" content="desktop.mac"/><meta name="updated" content="2016-07-01 08:03:39 +0000"/><title>Java 명령문</title></head><body>
+<div><br/></div>
+<div><br/></div>
+<div><br/></div>
+<div><br/></div>
+<div><b>#Scanner</b></div>
+<div> - 특정 형식으로 데이터를 잘라 주는 도구</div>
+<div> - java.util 에 있음</div>
+<div> - ex&gt;      <span style="color: rgb(255, 0, 0);"><b>Scanner keyScanner = new Scanner(System.in);</b></span></div>
+<div><span style="color: rgb(255, 0, 0);"><b>               String str = keyScanner.nextLine();</b></span></div>
+<div><b>#System.in</b></div>
+<div> - 키보드에 입력한 값을 읽어들이는 도구</div>
+<div><br/></div>
+<div><br/></div>
+<div><b>#Date</b></div>
+<div>- 오늘 날짜를 문자열로 얻는 기능</div>
+<div>- java.sql 패키지에 있는 Date(int year, int month, int day)</div>
+<div>- 현재 날짜 구하기 ex &gt; <span style="color: rgb(255, 0, 0);"><b>java.sql.Date today = new java.sql.Date(System.currentTimeMillis());</b></span></div>
+<div>- 문자열로 바꾸기 ex&gt; String str = today.toString();        </div>
+<div><br/></div>
+<div><br/></div>
+<div><span style="color: rgb(255, 0, 0);"><b># project  -&gt; bin, src</b></span></div>
+<div><span style="color: rgb(255, 0, 0);"><b><br/></b></span></div>
+<div><span style="color: rgb(255, 0, 0);"><b>&gt; javac -encoding UTF-8 -d bin src/foldername/filename.java</b></span></div>
+<div><span style="color: rgb(255, 0, 0);"><b>&gt; java bin foldername.filename</b></span></div>
+<div>소스 디렉토리와 .class 디렉토리가 분리된 상태에서는 다른 클래스를 사용하는 클래스를 컴파일 할 때 -sourcepath 옵션을 붙어야 한다.</div>
+<div><span style="color: rgb(255, 0, 0);"><b>&gt; javac -encoding UTF-8 -d bin -sourcepath src src/foldername/filename.java</b></span></div>
+<div><br/></div>
+<div><br/></div>
+<div><b># Integer</b></div>
+<div><br/></div>
+<div> - int 변수 변수의 최대값 확인 =&gt; <span style="color: rgb(255, 0, 0);"><b>Integer.MAX_VALUE</b>;</span></div>
+<div><font face="D2Coding"> - Type 변환 ( </font><span style="font-family: D2Coding;">String -&gt; Int )</span>  : <b><span style="color: rgb(255, 0, 0);">Integer.parseInt()</span></b></div>
+<div><span style="color: rgb(255, 0, 0);"><b> </b></span>- 2진수로 출력 :</div>
+<div> - 16진수로 출력 : </div>
+<div><span style="color: rgb(255, 0, 0);"><br/></span></div>
+<div><b># String</b></div>
+<div><br/></div>
+<div>-  <span style="color: rgb(255, 38, 0);"><b>intern()</b></span></div>
+<div>   일반 스트링 인스턴스의 값을 상수 스트링 풀에 생성</div>
+<div>   ex&gt; String s1 = new String(“aaa”);</div>
+<div>          String s2 = s1.intern();</div>
+<div><br/></div>
+<div>-  <span style="color: rgb(255, 38, 0);"><b>substring(int beginIndex) , subString(int beginIndex, int ednIndex)</b></span></div>
+<div>   문자열에 대해 인덱스 번호를 주어 해당 문자열 출력 (리턴값 string)</div>
+<div><br/></div>
+<div>- <b><span style="color: rgb(255, 38, 0);">indexOf(ch), indexOf(String)</span></b></div>
+<div>  해당 문자 또는 문자열의 인덱스 번호를 리턴 (리턴값 int)</div>
+<div><br/></div>
+<div>- <span style="color: rgb(255, 38, 0);"><b>split()</b></span></div>
+<div>  문자열을 파라미터 값 대상으로 잘라서 각각의 변수를 생성하고 해당 주소를 담는 배열을 리턴 해준다. (리턴값 string[])</div>
+<div>  ex&gt; String[] arr = “ABC DEF GHI”.split(“ “); -&gt; 공백을 기준으로 잘라서 배열 길이가 3인 배열을 리턴한다.</div>
+<div><br/></div>
+<div>- <span style="color: rgb(255, 38, 0);"><b>trim()</b></span></div>
+<div>  문자열중 공백을 날려준다. 입력 값중에 공백이 있어도 공백을 제외하고 문자열 만 남긴다.</div>
+<div><br/></div>
+<div><span style="font-family: D2Coding;"> - String -&gt; char로 변환 <b>  <span style="color: rgb(255, 0, 0);">charAt</span></b></span></div>
+<div>    ex&gt; String s = "A";  or  String[] s = {"A"}</div>
+<div>           char c = s.charAt(0);  or  char c = <span style="color: rgb(255, 38, 0);">s[0].charAt(0);</span></div>
+<div><br/></div>
+<div><font face="D2Coding"><b><span style="color: rgb(255, 0, 0);"> </span>-</b>String -&gt; char[] 변환 <span style="color: rgb(255, 0, 0);"><b>  toCharArray()</b></span></font></div>
+<div><font face="D2Coding"><b> -</b> String[] -&gt; char[] 변환</font></div>
+<div><span style="font-family: D2Coding;">    ex&gt; String str = "ABCDEFG"; or Stirng[] str = {"A"};</span></div>
+<div><span style="font-family: D2Coding;">           char[] ch1 = str.<span style="color: rgb(255, 0, 0);"><b>toCharArray(); or str[0].toCharArray();</b></span></span></div>
+<div><br/></div>
+<div><span style="font-family: D2Coding;">    ch1의 배열이 생성 된다. </span></div>
+<div><span style="font-family: D2Coding;">    ch1 -&gt; { 'A', 'B', 'C', 'D', 'E', 'F', 'G' }</span></div>
+<div><font face="D2Coding"><br/></font></div>
+<div><b> - 문자열을 대문자 or 소문자로 변환</b></div>
+<div><br/></div>
+<div>소문자로 만들기  -&gt; toLowerCase()     -&gt; str.<span style="color: rgb(255, 0, 0);"><b>toLowerCase()</b></span></div>
+<div>대문자로 만들기  -&gt; toUpperCase()     -&gt; str.<span style="color: rgb(255, 0, 0);"><b>toUpperCase()</b></span></div>
+<div><b><span style="color: rgb(255, 0, 0);"><br/></span></b></div>
+<div><b><span style="font-family: D2Coding;"> - 문자열 비교 방법</span></b></div>
+<div><span style="font-family: D2Coding;">    <b>==</b> -&gt; 사용 불가</span></div>
+<div><span style="color: rgb(255, 0, 0);"><b><span style="font-family: D2Coding;">   .equals("ABC")</span></b></span></div>
+<div><span style="color: rgb(255, 0, 0);"><b>   DataType이 Char인 경우는 == 사용 </b></span></div>
+<div><b><span style="color: rgb(255, 0, 0);"><br/></span></b></div>
+<div><b><span style="color: rgb(255, 0, 0);"><br/></span></b></div>
+<div><b><span style="color: rgb(255, 0, 0);">  </span></b><b># Math</b></div>
+<div><b><br/></b></div>
+<div><span style="font-family: D2Coding;"><b> -</b> 절대값 구하기<b>.<span style="color: rgb(255, 0, 0);"> </span> =&gt;<span style="color: rgb(255, 0, 0);"> </span></b></span><span style="color: rgb(255, 0, 0);"><b><span style="font-family: D2Coding;">Math.abs(값)</span></b></span></div>
+<div> - 랜덤변수 구하기 =&gt; <span style="color: rgb(255, 0, 0);"><b><span style="font-family: D2Coding;">Math.random()</span></b></span></div>
+<ul>
+<li><span style="font-family: D2Coding;">0&lt;= x &lt; 1</span></li>
+<li><span style="font-family: D2Coding;">x는 부동소수점 ex) 0.007542, 0.2341</span></li>
+<li><span style="font-family: D2Coding;">정수로 뽑고자 할경우 Math.random() * 10</span></li>
+<li><span style="font-family: D2Coding;">Type은 부동소수점 이므로 double형</span></li>
+<li><span style="font-family: D2Coding;">임시적 형변환으로 (int)이용하여 int로 변환</span></li>
+</ul>
+<div><br/></div>
+<div><br/></div>
+<div><br/></div>
+</body></html>

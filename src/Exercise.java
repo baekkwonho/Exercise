@@ -7,7 +7,7 @@ public class Exercise {
 
     int randnum;
 
-    randnum = (int)(Math.random() * 42);
+    randnum = (int)(Math.random() * 43);
 
 
     switch (randnum) {
@@ -210,7 +210,10 @@ public class Exercise {
         break;
 
       case 42 :
-        System.out.println(" 42번\n ");
+        System.out.println(" 42번\n while문을 이용하여 구구단을 2단~18단까지 출력한다.");
+        System.out.println(" 단수는 2, 3, 5, 8, 12, 17단 순으로 출력 한다\n 짝수 단은 짝수만 곱하고, 홀수단은 홀수만 곱한다.");
+        break;
+
     }
 
 

@@ -7,7 +7,7 @@ public class Exercise {
 
     int randnum;
 
-    randnum = (int)(Math.random() * 43);
+    randnum = (int)(Math.random() * 45);
 
 
     switch (randnum) {
@@ -212,6 +212,16 @@ public class Exercise {
       case 42 :
         System.out.println(" 42번\n while문을 이용하여 구구단을 2단~18단까지 출력한다.");
         System.out.println(" 단수는 2, 3, 5, 8, 12, 17단 순으로 출력 한다\n 짝수 단은 짝수만 곱하고, 홀수단은 홀수만 곱한다.");
+        break;
+        
+      case 43 :
+        System.out.println(" 43번\n 5행 5열 배열에 다음과 같이 넣고 출력 한다.");
+        System.out.println("   1   2   3   4   5\n   6   7   8   9  10\n  11  12  13  14  15\n  16  17  18  19  20\n  21  22  23  24  25\n");
+        break;
+        
+      case 45 :
+        System.out.println(" 44번 \n 숫자를 입력 받아 해당 숫자의 개수를 출력 한다. ");
+        System.out.println(" 숫자를 입력 하세요. 2745339\n 2 - 1\n 3 - 2\n 4 - 1\n 5 - 1\n 7 - 1\n 9 - 1");
         break;
 
     }

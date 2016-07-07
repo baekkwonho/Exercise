@@ -16,9 +16,9 @@ public class Answer001 {
       count = 0;
       while (count < end) {
         if ( arr[count] > arr[count + 1]) {
-          tmp = arr[count];
+          count = arr[count];
           arr[count] = arr[count + 1];
-          arr[count + 1] = tmp;
+          arr[count + 1] = count;
         } 
         count++;
       }

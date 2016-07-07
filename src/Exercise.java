@@ -7,7 +7,7 @@ public class Exercise {
 
     int randnum;
 
-    randnum = (int)(Math.random() * 45);
+    randnum = (int)(Math.random() * 50);
 
 
     switch (randnum) {
@@ -219,11 +219,40 @@ public class Exercise {
         System.out.println("   1   2   3   4   5\n   6   7   8   9  10\n  11  12  13  14  15\n  16  17  18  19  20\n  21  22  23  24  25\n");
         break;
         
+      case 44 :
+        System.out.println(" 44번\n 5행 5열 배열에 다음과 같이 넣고 출력 한다. ");
+        System.out.println("   1   2   3   4   5\n  10   9   8   7   6\n  11  12  13  14  15\n  20  19  18  17  16\n  21  22  23  24  25\n");
+        break;
+        
       case 45 :
-        System.out.println(" 44번 \n 숫자를 입력 받아 해당 숫자의 개수를 출력 한다. ");
+        System.out.println(" 45번 \n 숫자를 입력 받아 해당 숫자의 개수를 출력 한다. ");
         System.out.println(" 숫자를 입력 하세요. 2745339\n 2 - 1\n 3 - 2\n 4 - 1\n 5 - 1\n 7 - 1\n 9 - 1");
         break;
-
+       
+      case 46 :
+        System.out.println(" 45번 \n 5행 5열 배열에 다음과 같이 넣고 출력 하고, 좌우 대칭 하여 다시 출력 한다. ");
+        System.out.println("   1   2   3   4   5\n  10   9   8   7   6\n  11  12  13  14  15\n  20  19  18  17  16\n  21  22  23  24  25\n");
+        System.out.println("-----좌우 대칭-----");
+        System.out.println("   5   4   3   2   1\n   6   7   8   9  10\n  15  14  13  12  11\n  16  17  18  19  20\n  25  24  23  22  21\n");
+        break;
+        
+      case 47 :
+        System.out.println(" 47번 \n 숫자를 입력 받고 역순으로 출력 한다. ");
+        System.out.println(" 숫자를 입력 하세요 15231312\n 21313251");
+        break;
+        
+      case 48 :
+        System.out.println(" 48번 \n 5행 5열 배열에 다음과 같이 넣고 출력 하고,\n 시계방향으로 90도 회전 하여 다시 출력 한다.\n");
+        System.out.println("   1   2   3   4   5\n  10   9   8   7   6\n  11  12  13  14  15\n  20  19  18  17  16\n  21  22  23  24  25");
+        System.out.println("----90도 돌리기----");
+        System.out.println("  21  20  11  10   1\n  22  19  12   9   2\n  23  18  13   8   3\n  24  18  14   7   4\n  25  16  15   6   5\n");
+        break;
+        
+      case 49 :
+        System.out.println(" 49번 \n 5행 5열 배열에 다음과 같이 넣고 출력 한다.");
+        System.out.println("   1   3   6  10  15\n   2   5   9  14  19\n   4   8  13  18  22\n   7  12  17  21  24\n  11  16  20  23  25");
+        break;
+        
     }
 
 

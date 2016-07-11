@@ -253,6 +253,15 @@ public class Exercise {
         System.out.println("   1   3   6  10  15\n   2   5   9  14  19\n   4   8  13  18  22\n   7  12  17  21  24\n  11  16  20  23  25");
         break;
         
+      case 50 :
+        System.out.println(" 50번 \n 양의 정수를 입력 받아 그 순서에 있는 대문자 알파벳을 출력한다. ");
+        System.out.println(" 26이상이 되면 로테이션으로 다시 A부터 출력 한다. 0 = A ");
+        break;
+        
+      case 51 :
+        System.out.println(" 51번 \n 문장을 입력 받아 단어의 갯수를 출력 한다.");
+        break;
+        
     }
 
 

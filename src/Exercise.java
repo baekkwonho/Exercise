@@ -7,7 +7,7 @@ public class Exercise {
 
     int randnum;
 
-    randnum = (int)(Math.random() * 50);
+    randnum = (int)(Math.random() * 53);
 
 
     switch (randnum) {
@@ -260,6 +260,12 @@ public class Exercise {
         
       case 51 :
         System.out.println(" 51번 \n 문장을 입력 받아 단어의 갯수를 출력 한다.");
+        break;
+      
+      case 52 :
+        System.out.println(" 52번 \n 다음 배열의 값을 quickSort()함수를 이용하여 출력하라.\n");
+        System.out.println("정렬전: 3 44 38 5 47 15 36 26 27 2 46 4 19 50 48 ");
+        System.out.println("정렬후: 2 3 4 5 15 19 26 27 36 38 44 46 47 48 50 ");
         break;
         
     }

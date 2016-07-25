@@ -254,12 +254,12 @@ public class Exercise {
         break;
         
       case 50 :
-        System.out.println(" 50번 \n 양의 정수를 입력 받아 그 순서에 있는 대문자 알파벳을 출력한다. ");
-        System.out.println(" 26이상이 되면 로테이션으로 다시 A부터 출력 한다. 0 = A ");
+        System.out.println(" 50번 \n 문장을 입력 받아 단어의 갯수를 출력 한다.");
         break;
         
       case 51 :
-        System.out.println(" 51번 \n 문장을 입력 받아 단어의 갯수를 출력 한다.");
+        System.out.println(" 51번 \n 양의 정수를 입력 받아 그 순서에 있는 대문자 알파벳을 출력한다. ");
+        System.out.println(" 26이상이 되면 로테이션으로 다시 A부터 출력 한다. 0 = A ");
         break;
       
       case 52 :
